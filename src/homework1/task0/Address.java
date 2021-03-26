@@ -14,6 +14,10 @@ public class Address {
 
     }
 
+    public Address(){
+
+    }
+
     public Address(String index, String country, String city, String street, int house, int apartment) {
         this.index = index;
         this.country = country;
