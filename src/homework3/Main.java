@@ -2,6 +2,9 @@ package homework3;
 
 import homework3.add_task.Printer;
 import homework3.task2.ClassRoom;
+import homework3.task3.Vehicle;
+import homework3.task4.DocumentWorker;
+import homework3.task4.ProDocumentWorker;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,20 +16,13 @@ public class Main {
         main.startAddTask();
     }
 
-    void startTask2() {
-        Printer printer = new Printer();
-    }
+    void startTask3() { Vehicle ven = new Vehicle(); }
 
-    void startTask3() {
-        ClassRoom room = new ClassRoom();
-    }
+    void startTask2() { ClassRoom room = new ClassRoom(); }
 
-    void startTask4() {
+    void startTask4() { DocumentWorker doc = new ProDocumentWorker(); }
 
-    }
-
-    void startAddTask() {
-    }
+    void startAddTask() { Printer printer = new Printer(); }
 }
 /*
 

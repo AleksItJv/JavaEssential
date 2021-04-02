@@ -1,6 +1,7 @@
 package homework3.task2;
 
 public class ClassRoom {
+
     public static void main(String[] args) {
         Pupil badMan = new BadPupil("Fedja", "Stone");
         Pupil goodMan = new GoodPupil("Edward", "Scissorhands");
@@ -10,6 +11,6 @@ public class ClassRoom {
         badMan.academicPerformance();
         goodMan.academicPerformance();
         excelentPupil.academicPerformance();
-
     }
+
 }
