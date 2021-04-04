@@ -3,6 +3,9 @@ package homework4;
 
 
 import homework4.task2.AbstractHandler;
+import homework4.task2.DOCHandler;
+import homework4.task2.TXTHandler;
+import homework4.task2.XMLHandler;
 import homework4.task3.Player;
 
 
@@ -15,7 +18,11 @@ public class Main {
     }
 
     void startTask2() {
-        AbstractHandler.startTask2();
+        new DOCHandler().workWithDocs();
+        new TXTHandler().workWithDocs();
+        new XMLHandler().workWithDocs();
+
+        //AbstractHandler.startTask2();
     }
 
     void startTask3(){

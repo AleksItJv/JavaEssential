@@ -1,16 +1,21 @@
 package homework4.task2;
 
-public class AbstractHandler {
+public abstract class AbstractHandler {
 
-    void open(){}
+    abstract void open();
 
-    void create(){}
+    abstract void create();
 
-    void change(){}
+    abstract void change();
 
-    void save(){}
+    abstract void save();
 
-    public static void startTask2() {
+    public void workWithDocs() {
+
+       /* open();
+        create();
+        change();
+        save();*/
 
         AbstractHandler doc = new DOCHandler();
         AbstractHandler txt = new TXTHandler();
