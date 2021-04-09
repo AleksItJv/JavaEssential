@@ -2,17 +2,18 @@ package homework6.task2;
 
 public class Vehicle {
 
-    void printWheelColor(){
+    void printWheelColor() {
         Wheel wheel = new Wheel();
         System.out.println("Wheel color - " + wheel.color);
 
     }
-    void printDoorColor(){
+
+    void printDoorColor() {
         System.out.println("Door color - " + new Door().color);
 
     }
 
-    private class Wheel{
+    private class Wheel {
 
         private String color = "black";
 
