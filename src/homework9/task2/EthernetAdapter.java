@@ -5,7 +5,7 @@ public class EthernetAdapter extends Device {
     private int speed;
     private String mac;
 
-    EthernetAdapter(String manufacturer, float price, String serialNumber, int speed, String mac){
+    EthernetAdapter(String manufacturer, float price, String serialNumber, int speed, String mac) {
         super(manufacturer, price, serialNumber);
         this.speed = speed;
         this.mac = mac;
@@ -19,7 +19,9 @@ public class EthernetAdapter extends Device {
         this.speed = speed;
     }
 
-    public String getMac() {return mac;}
+    public String getMac() {
+        return mac;
+    }
 
     public void setMac(String mac) {
         this.mac = mac;
@@ -46,13 +48,14 @@ public class EthernetAdapter extends Device {
     }
 
     @Override
-    public int hashCode(){
+    public int hashCode() {
         int result = 3;
         result = 13 * result + (getManufacturer() == null ? 0 : getManufacturer().length());
         result = 13 * result + (int) Math.ceil(getPrice()); //Float.floatToIntBits(price);
         result = 13 * result + (getSerialNumber() == null ? 0 : getSerialNumber().length());
         result = 13 * result + speed;
-        result = 13 * result + (mac == null ? 0 : mac.length());;
+        result = 13 * result + (mac == null ? 0 : mac.length());
+        ;
         return result;
     }
 }

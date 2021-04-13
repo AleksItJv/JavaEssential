@@ -1,6 +1,5 @@
 package homework9.task2;
 
-import java.util.Objects;
 
 public class Device {
 
@@ -52,13 +51,13 @@ public class Device {
         if (object == null) return false;
         if (object instanceof Device) {
             Device dv = (Device) object;
-            return hashCode() == object.hashCode() && getPrice() == dv.getPrice() && getManufacturer().equals(dv.getManufacturer()) &&  getSerialNumber().equals(dv.getSerialNumber());
+            return hashCode() == object.hashCode() && getPrice() == dv.getPrice() && getManufacturer().equals(dv.getManufacturer()) && getSerialNumber().equals(dv.getSerialNumber());
         }
         return false;
     }
 
     @Override
-    public int hashCode(){
+    public int hashCode() {
         int result = 3;
         result = 13 * result + (manufacturer == null ? 0 : manufacturer.length());
         result = 13 * result + (int) Math.ceil(price); //Float.floatToIntBits(price);

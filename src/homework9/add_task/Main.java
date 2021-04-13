@@ -8,11 +8,13 @@ public class Main {
         Animals vik = new Animals("Vik", 35, true);
         Animals brother = new Animals("Васька", 45, false);
 
+        System.out.println();
         System.out.println(vaska);
         System.out.println(lion);
         System.out.println(vik);
         System.out.println(brother);
 
+        System.out.println();
         System.out.println(vaska.equals(lion));
         System.out.println(vaska.equals(vik));
         System.out.println(vaska.equals(brother));

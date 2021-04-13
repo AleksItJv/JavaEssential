@@ -43,13 +43,13 @@ public class Monitor extends Device {
         if (object == null) return false;
         if (object instanceof Monitor) {
             Monitor mn = (Monitor) object;
-            return hashCode() == object.hashCode() && getPrice() == mn.getPrice() && getManufacturer().equals(mn.getManufacturer()) && resolutionX ==  mn.resolutionX && resolutionY == mn.resolutionY && getSerialNumber().equals(mn.getSerialNumber());
+            return hashCode() == object.hashCode() && getPrice() == mn.getPrice() && getManufacturer().equals(mn.getManufacturer()) && resolutionX == mn.resolutionX && resolutionY == mn.resolutionY && getSerialNumber().equals(mn.getSerialNumber());
         }
         return false;
     }
 
     @Override
-    public int hashCode(){
+    public int hashCode() {
         int result = 3;
         result = 13 * result + (getManufacturer() == null ? 0 : getManufacturer().length());
         result = 13 * result + (int) Math.ceil(getPrice()); //Float.floatToIntBits(price);
