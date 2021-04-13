@@ -1,7 +1,5 @@
 package homework8.task2;
 
-import java.io.IOException;
-import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Scanner;
@@ -17,14 +15,6 @@ public class Worker {
         return firstName;
     }
 
-    /*    @Override
-        public String toString() {
-            return "Worker: " +
-                    "First Name - " + firstName +
-                    ", Last Name - " + lastName +
-                    ", Position - " + position +
-                    ", Year Starter - " + yearStarter;
-        }  */
     @Override
     public String toString() {
         return "Worker: "
