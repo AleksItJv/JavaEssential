@@ -12,7 +12,7 @@ public class Main {
         // task2 System.out.printf("%s, %.2f, %s, %d, %d \n", monitor.getManufacturer(), monitor.getPrice(), monitor.getSerialNumber(), monitor.getResolutionX(), monitor.getResolutionY());
         System.out.println(monitor);
 
-        EthernetAdapter ea = new EthernetAdapter("Next", 200f, "#650", 100, "20-89-84-41-4A-7C");
+        EthernetAdapter ea = new EthernetAdapter("Next", 200.2f, "#650", 100, "20-89-84-41-4A-7C");
         // task2 System.out.printf("Ethernet Adapter: %s, %.2f uah, id %s, speed %d, mac %s \n", ea.getManufacturer(), ea.getPrice(), ea.getSerialNumber(), ea.getSpeed(), ea.getMac());
         System.out.println(ea);
 
